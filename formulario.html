@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Solicitud de Servicios - Claro</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #d90000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .logo {
+            width: 200px;
+            margin: 10px auto;
+            display: block;
+        }
+
+        /* CONTENEDOR FORMULARIO */
+        .contenedor {
+            background: white;
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 5px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+        }
+
+        input[type="radio"] {
+            width: auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Claro República Dominicana</h1>
+        <img src="https://i0.wp.com/ojala.do/wp-content/uploads/2021/06/logo-claro.png?fit=1920%2C1080&ssl=1" alt="Logo Claro" class="logo" >
+        <p>Formulario de Solicitud de Servicios</p>
+    </header>
+
+    <!-- FORMULARIO -->
+    <div class="contenedor">
+        <form>
+
+            <label>Primer Nombre</label>
+            <input type="text">
+
+            <label>Segundo Nombre</label>
+            <input type="text">
+
+            <label>Primer Apellido</label>
+            <input type="text">
+
+            <label>Segundo Apellido</label>
+            <input type="text">
+
+            <label>Sexo</label><br>
+            <input type="radio" name="sexo"> Masculino
+            <input type="radio" name="sexo"> Femenino
+            <br><br>
+
+            <label>Fecha de Nacimiento</label>
+            <input type="date">
+
+            <label>Ciudad de Nacimiento</label>
+            <input type="text">
+
+            <label>Provincia de Nacimiento</label>
+            <select>
+                <option>Seleccione una provincia</option>
+                <option>Azua</option>
+                <option>Bahoruco</option>
+                <option>Barahona</option>
+                <option>Dajabón</option>
+                <option>Distrito Nacional</option>
+                <option>Duarte</option>
+                <option>El Seibo</option>
+                <option>Elías Piña</option>
+                <option>Espaillat</option>
+                <option>Hato Mayor</option>
+                <option>Hermanas Mirabal</option>
+                <option>Independencia</option>
+                <option>La Altagracia</option>
+                <option>La Romana</option>
+                <option>La Vega</option>
+                <option>María Trinidad Sánchez</option>
+                <option>Monseñor Nouel</option>
+                <option>Monte Cristi</option>
+                <option>Monte Plata</option>
+                <option>Pedernales</option>
+                <option>Peravia</option>
+                <option>Puerto Plata</option>
+                <option>Samaná</option>
+                <option>San Cristóbal</option>
+                <option>San José de Ocoa</option>
+                <option>San Juan</option>
+                <option>San Pedro de Macorís</option>
+                <option>Sánchez Ramírez</option>
+                <option>Santiago</option>
+                <option>Santiago Rodríguez</option>
+                <option>Santo Domingo</option>
+                <option>Valverde</option>
+            </select>
+
+            <label>País de Origen</label>
+            <select>
+                <option>Seleccione un país</option>
+                <option>Argentina</option>
+                <option>Bolivia</option>
+                <option>Brasil</option>
+                <option>Chile</option>
+                <option>Colombia</option>
+                <option>Costa Rica</option>
+                <option>Cuba</option>
+                <option>Ecuador</option>
+                <option>El Salvador</option>
+                <option>Guatemala</option>
+                <option>Haití</option>
+                <option>Honduras</option>
+                <option>México</option>
+                <option>Nicaragua</option>
+                <option>Panamá</option>
+                <option>Paraguay</option>
+                <option>Perú</option>
+                <option>República Dominicana</option>
+                <option>Uruguay</option>
+                <option>Venezuela</option>
+            </select>
+
+            <label>Estado Civil</label><br>
+            <input type="radio" name="estado"> Soltero
+            <input type="radio" name="estado"> Casado
+            <input type="radio" name="estado"> Divorciado
+            <input type="radio" name="estado"> Viudo
+            <br><br>
+
+            <label>Número de Cédula</label>
+            <input type="text">
+
+            <label>Número de Celular</label>
+            <input type="text">
+
+            <label>Teléfono del Trabajo</label>
+            <input type="text">
+
+            <label>Correo Electrónico</label>
+            <input type="email">
+
+            <label>Servicio a Solicitar</label><br>
+            <input type="radio" name="servicio"> Internet Móvil
+            <input type="radio" name="servicio"> Internet Fijo
+            <input type="radio" name="servicio"> Fibra Óptica
+            <br><br>
+
+            <label>Subir Imagen</label>
+            <input type="file">
+
+            <label>Observaciones</label>
+            <textarea rows="4"></textarea>
+
+            <br><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Claro RD. Todos los derechos reservados.</p>
+        <p>Katherine Altagracia Checo Peña</p>
+    </footer>
+
+</body>
+</html>
